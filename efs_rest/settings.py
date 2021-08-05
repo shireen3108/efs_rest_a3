@@ -85,7 +85,7 @@ WSGI_APPLICATION = 'efs_rest.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
     # 'default': {
     #     'HOST': 'ec2-54-173-31-84.compute-1.amazonaws.com',
